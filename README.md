@@ -2,7 +2,7 @@
 This is a simple project that aims to create a basic Artificial Neural Network to predict if bank customers are going to maintain/close their accounts.
 
 ## Data Set
-The dataset used in an artificial dataset containing details about bank customers. The raw dataset file can be fetched from [this folder](https://github.com/sinanw/ann_bank_customer_retention/tree/main/data/raw).<br/>
+The dataset used in an artificial dataset containing details about bank customers. The raw dataset file can be fetched from [this folder](https://github.com/sinanw/ann-bank-customer-retention/tree/main/data/raw).<br/>
 
 This dataset is labeled and contains information about bank customers, including their credit score, geographic location, gender, age, tenure with the bank, account balance, number of products held, credit card status, membership status, estimated salary, and whether they exited the bank (presumably closed their account).
 
@@ -12,7 +12,7 @@ The project is implemented in two distinct steps simulating the essential data p
 - Intermediary data files are stored inside the [data](data) path.
 
 ### PHASE 1 - Data Preprocessing
-> Corresponding notebook:  [data-preprocessing.ipynb](https://github.com/sinanw/ann_bank_customer_retention/blob/main/notebooks/1-data-preprocessing.ipynb)
+> Corresponding notebook:  [data-preprocessing.ipynb](https://github.com/sinanw/ann-bank-customer-retention/blob/main/notebooks/1-data-preprocessing.ipynb)
 
 Implemented data exploration and cleaning tasks:
 1. Loading the raw dataset file into pandas DataFrame.
@@ -23,7 +23,7 @@ Implemented data exploration and cleaning tasks:
 6. Storing the processed dataset to a csv file.
 
 ### PHASE 2 - ANN Training and Evaluation
-> Corresponding notebook:  [ann-training.ipynb](https://github.com/sinanw/ann_bank_customer_retention/blob/main/notebooks/2-ann-training.ipynb)
+> Corresponding notebook:  [ann-training.ipynb](https://github.com/sinanw/ann-bank-customer-retention/blob/main/notebooks/2-ann-training.ipynb)
 
 Model architecture and training details:
 - ANN using [TensorFlow Sequential](https://www.tensorflow.org/api_docs/python/tf/keras/Sequential).
