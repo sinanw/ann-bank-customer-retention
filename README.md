@@ -22,25 +22,24 @@ Implemented data exploration and cleaning tasks:
 5. Scaling independent features using [StandardScaler](https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.StandardScaler.html).
 6. Storing the processed dataset to a csv file.
 
-### PHASE 2 - ANN Training
+### PHASE 2 - ANN Training and Evaluation
 > Corresponding notebook:  [ann-training.ipynb](https://github.com/sinanw/ann_bank_customer_retention/blob/main/notebooks/2-ann-training.ipynb)
 
-Trained and analyzed model: ANN using [TensorFlow Sequential](https://www.tensorflow.org/api_docs/python/tf/keras/Sequential)
-- Input layer
-- First hidden layer with 6 units and relu activation function.
-- Second hidden layer with 6 units and relu activation function.
-- Output layer with 1 units and sigmoid activation function.
-- Optimizer: adam
-- Loss function: binary_crossentropy
+Model architecture and training details:
+- ANN using [TensorFlow Sequential](https://www.tensorflow.org/api_docs/python/tf/keras/Sequential).
+- Default input layer.
+- First hidden layer with 6 units and [relu](https://www.tensorflow.org/api_docs/python/tf/keras/activations/relu) activation function.
+- Second hidden layer with 6 units and [relu](https://www.tensorflow.org/api_docs/python/tf/keras/activations/relu) activation function.
+- Output layer with a single unit and [sigmoid](https://www.tensorflow.org/api_docs/python/tf/keras/activations/sigmoid) activation function.
+- Optimizer: [Adam](https://www.tensorflow.org/api_docs/python/tf/keras/optimizers/Adam).
+- Loss function: [Binary Crossentropy](https://www.tensorflow.org/api_docs/python/tf/keras/metrics/binary_crossentropy).
 - Batch size: 32
 - Epochs: 100
 
 Evaluation method: 
-- Train Test Split Technique: [Train Test Split](https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.train_test_split.html)
+- Evaluation technique: [Train Test Split](https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.train_test_split.html).
 - Test size: 20%
 - Obtained results:
-
-Here are the results presented in a markdown table format with percentages:
 
 | Model    | Accuracy | Recall   | Precision | F1      |
 |----------|----------|----------|-----------|---------|
