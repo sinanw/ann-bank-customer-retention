@@ -28,9 +28,9 @@ Implemented data exploration and cleaning tasks:
 Model architecture and training details:
 - ANN using [TensorFlow Sequential](https://www.tensorflow.org/api_docs/python/tf/keras/Sequential).
 - Default input layer.
-- First hidden layer with 6 units and [relu](https://www.tensorflow.org/api_docs/python/tf/keras/activations/relu) activation function.
-- Second hidden layer with 6 units and [relu](https://www.tensorflow.org/api_docs/python/tf/keras/activations/relu) activation function.
-- Output layer with a single unit and [sigmoid](https://www.tensorflow.org/api_docs/python/tf/keras/activations/sigmoid) activation function.
+- First hidden layer with 6 units and [ReLU](https://www.tensorflow.org/api_docs/python/tf/keras/activations/relu) activation function.
+- Second hidden layer with 6 units and [ReLU](https://www.tensorflow.org/api_docs/python/tf/keras/activations/relu) activation function.
+- Output layer with a single unit and [Sigmoid](https://www.tensorflow.org/api_docs/python/tf/keras/activations/sigmoid) activation function.
 - Optimizer: [Adam](https://www.tensorflow.org/api_docs/python/tf/keras/optimizers/Adam).
 - Loss function: [Binary Crossentropy](https://www.tensorflow.org/api_docs/python/tf/keras/metrics/binary_crossentropy).
 - Batch size: 32
@@ -39,8 +39,3 @@ Model architecture and training details:
 Evaluation method: 
 - Evaluation technique: [Train Test Split](https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.train_test_split.html).
 - Test size: 20%
-- Obtained results:
-
-| Model    | Accuracy | Recall   | Precision | F1      |
-|----------|----------|----------|-----------|---------|
-| ANN | 85.5%    | 44.7%    | 73.3%     | 55.5%   |
