@@ -23,9 +23,11 @@ Implemented data exploration and cleaning tasks:
 6. Storing the processed dataset to a csv file.
 
 ### PHASE 2 - ANN Training and Evaluation
-> Corresponding notebook:  [ann-training.ipynb](https://github.com/sinanw/ann-bank-customer-retention/blob/main/notebooks/2-ann-training.ipynb)
+We used two libraries to build and train the network:
+> Tensorflow: Corresponding notebook:  [ann-training-tensorflow.ipynb](https://github.com/sinanw/ann-bank-customer-retention/blob/main/notebooks/2-ann-training-tensorflow.ipynb)
+> Tensorflow: Corresponding notebook:  [ann-training-pytorch.ipynb](https://github.com/sinanw/ann-bank-customer-retention/blob/main/notebooks/2-ann-training-pytorch.ipynb)
 
-Model architecture and training details:
+Tensorflow - Model architecture and training details:
 - ANN using [TensorFlow Sequential](https://www.tensorflow.org/api_docs/python/tf/keras/Sequential).
 - Default input layer.
 - First hidden layer with 6 units and [ReLU](https://www.tensorflow.org/api_docs/python/tf/keras/activations/relu) activation function.
@@ -33,6 +35,18 @@ Model architecture and training details:
 - Output layer with a single unit and [Sigmoid](https://www.tensorflow.org/api_docs/python/tf/keras/activations/sigmoid) activation function.
 - Optimizer: [Adam](https://www.tensorflow.org/api_docs/python/tf/keras/optimizers/Adam).
 - Loss function: [Binary Crossentropy](https://www.tensorflow.org/api_docs/python/tf/keras/metrics/binary_crossentropy).
+- Batch size: 32
+- Epochs: 100
+
+Pytorch - Model architecture and training details:
+- Dataset loaded using [Datasets & DataLoaders](https://pytorch.org/tutorials/beginner/basics/data_tutorial.html).
+- ANN using [Pytorch nn.Module](https://pytorch.org/docs/stable/generated/torch.nn.Module.html).
+- Default input layer.
+- First hidden [Linear](https://pytorch.org/docs/stable/generated/torch.nn.Linear.html) layer with 6 units and [ReLU](https://pytorch.org/docs/stable/generated/torch.nn.ReLU.html) activation function.
+- Second hidden [Linear](https://pytorch.org/docs/stable/generated/torch.nn.Linear.html) layer with 6 units and [ReLU](https://pytorch.org/docs/stable/generated/torch.nn.ReLU.html) activation function.
+- Output [Linear](https://pytorch.org/docs/stable/generated/torch.nn.Linear.html) layer with a single unit and [Sigmoid](https://pytorch.org/docs/stable/generated/torch.nn.Sigmoid.html) activation function.
+- Optimizer: [Adam](https://pytorch.org/docs/stable/generated/torch.optim.Adam.html).
+- Loss function: [Binary Crossentropy](https://pytorch.org/docs/stable/generated/torch.nn.BCELoss.html).
 - Batch size: 32
 - Epochs: 100
 
