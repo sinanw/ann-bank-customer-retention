@@ -27,7 +27,7 @@ We used two libraries to build and train the network:
 > Tensorflow: Corresponding notebook:  [ann-training-tensorflow.ipynb](https://github.com/sinanw/ann-bank-customer-retention/blob/main/notebooks/2-ann-training-tensorflow.ipynb)
 > Tensorflow: Corresponding notebook:  [ann-training-pytorch.ipynb](https://github.com/sinanw/ann-bank-customer-retention/blob/main/notebooks/2-ann-training-pytorch.ipynb)
 
-Tensorflow - Model architecture and training details:
+**Tensorflow** - Model architecture and training details:
 - ANN using [TensorFlow Sequential](https://www.tensorflow.org/api_docs/python/tf/keras/Sequential).
 - Default input layer.
 - First hidden layer with 6 units and [ReLU](https://www.tensorflow.org/api_docs/python/tf/keras/activations/relu) activation function.
@@ -38,10 +38,9 @@ Tensorflow - Model architecture and training details:
 - Batch size: 32
 - Epochs: 100
 
-Pytorch - Model architecture and training details:
+**Pytorch** - Model architecture and training details:
 - Dataset loaded using [Datasets & DataLoaders](https://pytorch.org/tutorials/beginner/basics/data_tutorial.html).
 - ANN using [Pytorch nn.Module](https://pytorch.org/docs/stable/generated/torch.nn.Module.html).
-- Default input layer.
 - First hidden [Linear](https://pytorch.org/docs/stable/generated/torch.nn.Linear.html) layer with 6 units and [ReLU](https://pytorch.org/docs/stable/generated/torch.nn.ReLU.html) activation function.
 - Second hidden [Linear](https://pytorch.org/docs/stable/generated/torch.nn.Linear.html) layer with 6 units and [ReLU](https://pytorch.org/docs/stable/generated/torch.nn.ReLU.html) activation function.
 - Output [Linear](https://pytorch.org/docs/stable/generated/torch.nn.Linear.html) layer with a single unit and [Sigmoid](https://pytorch.org/docs/stable/generated/torch.nn.Sigmoid.html) activation function.
