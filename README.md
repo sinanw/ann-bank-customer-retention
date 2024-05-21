@@ -24,8 +24,8 @@ Implemented data exploration and cleaning tasks:
 
 ### PHASE 2 - ANN Training and Evaluation
 We used two libraries to build and train the network:
-> Tensorflow: Corresponding notebook:  [ann-training-tensorflow.ipynb](https://github.com/sinanw/ann-bank-customer-retention/blob/main/notebooks/2-ann-training-tensorflow.ipynb)
-> Tensorflow: Corresponding notebook:  [ann-training-pytorch.ipynb](https://github.com/sinanw/ann-bank-customer-retention/blob/main/notebooks/2-ann-training-pytorch.ipynb)
+> Tensorflow: Corresponding notebook:  [ann-training-tensorflow.ipynb](https://github.com/sinanw/ann-bank-customer-retention/blob/main/notebooks/2-ann-training-tensorflow.ipynb) <br/>
+> Pytorch: Corresponding notebook:  [ann-training-pytorch.ipynb](https://github.com/sinanw/ann-bank-customer-retention/blob/main/notebooks/2-ann-training-pytorch.ipynb)
 
 **Tensorflow** - Model architecture and training details:
 - ANN using [TensorFlow Sequential](https://www.tensorflow.org/api_docs/python/tf/keras/Sequential).
